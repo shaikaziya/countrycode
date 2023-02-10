@@ -6,35 +6,27 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { useState } from "react";
 import { countryConfig } from "./Constant";
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 export default function Dropdown() {
   const [country, setCountry] = useState(countryConfig);
-  const { countrycode } = useParams();
-  useEffect(() => {
-    getAPI();
-  }, [country]);
-
-  const getAPI = () => {
-    axios
-      .get(`https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig`)
-      .then((response) => {
-        const result = response.data;
-        console.log(result)
-      })
-      .catch((err) => err.message);
-  };
-
   const handleChange = (event) => {
     setCountry(event.target.value);
     const selectedData = countryConfig.find(
       (ele) => ele.name === event.target.value
     );
     localStorage.setItem("countryCode", selectedData.countryCode);
-    // localStorage.setItem("Lang");
+    const localcountrycode=localStorage.getItem("countryCode");
+    console.log(localcountrycode)
 
-
+  axios.get(`https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig?countryCode=${localcountrycode}`)
+   .then((response) => {
+     const result = response.data;
+     const getData=result.filter((ele)=> ele.countryCode===localcountrycode
+     
+   )
+   console.log(getData)
+  //  .catch((err) => err.message);
+   })
   };
 
 
@@ -54,7 +46,7 @@ export default function Dropdown() {
         >
           {countryConfig.map((countryConfigdata) => {
             return (
-              <MenuItem value={countryConfigdata.name}>
+              <MenuItem key={countryConfigdata.name} value={countryConfigdata.name}>
                 {countryConfigdata.name}
               </MenuItem>
             );
