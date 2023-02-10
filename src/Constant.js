@@ -10,7 +10,7 @@
 // ];
 export const countryConfig=[{
   name:"UnitedStates",
-  countryCode:"US"
+  countryCode:"USA"
 },
 {
   name: "VirginIslands",
