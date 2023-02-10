@@ -1,50 +1,26 @@
-// export const countryNames = [
-//   { UnitedStates: "en-US" },
-//   { Afghanistan: "ps-AF" },
-//   { ÅlandIslands: "sv-AX" },
-//   { Albania: "sq-AL" },
-//   { Algeria: "ar-DZ" },
-//   { AmericanSamoa: "en-AS" },
-//   { Andorra: "ca-AD" },
-//   { Anguilla: "en-AI" },
-// ];
+
 export const countryConfig=[{
   name:"UnitedStates",
-  countryCode:"USA"
+  countryCode:"US"
 },
 {
   name: "VirginIslands",
-  countryCode:"VGB"
+  countryCode:"VI"
 }
 ,{
   name: "Chile",
-  countryCode:"CHL"
+  countryCode:"CL"
 }
 ,{
-  name: "Albania",
-  countryCode:"ALB"
+  name: "Mexico",
+  countryCode:"MX"
 }
 ,{
-  name: "Aruba",
-  countryCode:"ABW"
+  name: "Jamaica",
+  countryCode:"JM"
 }
 ,{
-  name: "Barbados",
-  countryCode:"BRB"
+  name: "Argentina",
+  countryCode:"AR"
 }
-,{
-  name: "Bangladesh",
-  countryCode:"BGD"
-}
-,{
-  name: "Belize",
-  countryCode:"BLZ"
-}
-,{
-  name: "Brazil",
-  countryCode:"BRA"
-}
-,{
-  name: "Cuba",
-  countryCode:"CUB"
-}]
+]

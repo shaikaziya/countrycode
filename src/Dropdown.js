@@ -8,10 +8,13 @@ import { useState, useEffect } from "react";
 import { countryConfig } from "./Constant";
 import axios from "axios";
 export default function Dropdown() {
-  const [country, setCountry] = useState("USA");
+  const [country, setCountry] = useState("US");
+  const [locallang, setLocallang] = useState("en-US");
+
   useEffect(() => {
     localStorage.setItem("countryCode", country);
-  });
+    localStorage.setItem("lang", locallang);
+  }, []);
   const handleChange = (event) => {
     setCountry(event.target.value);
     const selectedData = countryConfig.find(
@@ -20,7 +23,6 @@ export default function Dropdown() {
     localStorage.setItem("countryCode", selectedData.countryCode);
     const localcountrycode = localStorage.getItem("countryCode");
     console.log(localcountrycode);
-
     axios
       .get(
         `https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig?countryCode=${localcountrycode}`
@@ -31,12 +33,12 @@ export default function Dropdown() {
         const getData = result.filter(
           (ele) => ele.countryCode === localcountrycode
         );
-
-        const jsonArr = JSON.stringify(result[0].supportedLocates[0].local);
+        console.log(result[0].countryCode);
+        const jsonArr = result[0].supportedLocates[0].local;
         localStorage.setItem("lang", jsonArr);
-        const locallang = localStorage.getItem("lang", jsonArr)
-        console.log(getData);
-        //  .catch((err) => err.message);
+        console.log(jsonArr,41,"jsonArr")
+        const locallang = localStorage.getItem("lang", jsonArr);
+        console.log(locallang,43,"locallang")
       });
   };
 
@@ -70,3 +72,9 @@ export default function Dropdown() {
     </Box>
   );
 }
+
+
+// en-US-->english
+// es-419-->spanish
+// es-AR-->
+// pt-BR-->porc

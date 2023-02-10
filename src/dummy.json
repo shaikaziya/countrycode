@@ -1,0 +1,133 @@
+[
+    {
+        "name": "UnitedStates",
+        "countryCode": "US",
+        "supportedLocates": [
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            }
+        ]
+    },
+    {
+        "name": "VirginIslands",
+        "countryCode": "VI",
+        "supportedLocates": [
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            },
+            {
+                "local": "es-AR",
+                "default": "N",
+                "name": "Spanish-Argentina"
+            },
+            {
+                "local": "pt-AR",
+                "default": "N",
+                "name": "Portuguese"
+            }
+        ]
+    },
+    {
+        "name": "Chile",
+        "countryCode": "CL",
+        "supportedLocates": [
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            },
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+            {
+                "local": "pt-AR",
+                "default": "N",
+                "name": "Portuguese"
+            }
+        ]
+    },
+    {
+        "name": "Mexico",
+        "countryCode": "MX",
+        "supportedLocates": [
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            },
+            {
+                "local": "es-AR",
+                "default": "N",
+                "name": "Spanish-Argentina"
+            },
+            {
+                "local": "pt-AR",
+                "default": "N",
+                "name": "Portuguese"
+            }
+        ]
+    },
+    {
+        "name": "Jamaica",
+        "countryCode": "JM",
+        "supportedLocates": [
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            },
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+            {
+                "local": "pt-AR",
+                "default": "N",
+                "name": "Portuguese"
+            }
+        ]
+    },
+    {
+        "name": "Argentina",
+        "countryCode": "AR",
+        "supportedLocates": [
+            {
+                "local": "es-AR",
+                "default": "N",
+                "name": "Spanish-Argentina"
+            },
+            {
+                "local": "en-US",
+                "default": "Y",
+                "name": "English"
+            },
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+            {
+                "local": "pt-AR",
+                "default": "N",
+                "name": "Portuguese"
+            }
+        ]
+    }
+]
