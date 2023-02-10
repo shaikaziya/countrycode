@@ -34,11 +34,16 @@ export default function Dropdown() {
           (ele) => ele.countryCode === localcountrycode
         );
         console.log(result[0].countryCode);
-        const jsonArr = result[0].supportedLocates[0].local;
+        const jsonArr = result[0].supportedLocates;
+        // let arr = [];
+        // jsonArr.map(item => {
+        //   arr.push(item.local);
+        // })
+        // console.log(arr,42)
         localStorage.setItem("lang", jsonArr);
         console.log(jsonArr,41,"jsonArr")
         const locallang = localStorage.getItem("lang", jsonArr);
-        console.log(locallang,43,"locallang")
+       
       });
   };
 
