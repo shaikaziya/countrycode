@@ -1,0 +1,205 @@
+// [{"countrycode":"UnitedStates","Supportedlocale":[{"name":"English","default":"y"}]},
+// {"countrycode":"Afghanistan","Supportedlocale":[{"name":["Pashto","Persian","Uzbek"],"default":"n"}]},
+// {"countrycode":"ÅlandIslands","Supportedlocale":[{"name":"Swedish","default":"n"}]},
+// {"countrycode":"Albania","Supportedlocale":[{"name":["Albanian","English"],"default":"y"}]},
+// {"countrycode":"Algeria","Supportedlocale":[{"name":["Arabic","French","Kabyle"],"default":"n"}]},
+// {"countrycode":"AmericanSamoa","Supportedlocale":[{"name":"English","default":"y"}]},
+// {"countrycode":"Andorra","Supportedlocale":[{"name":["Catalan","English","Lingala","Portuguese"],"default":"y"}]},
+// {"countrycode":"Anguilla","Supportedlocale":[{"name":["English","Spanish"],"default":"y"}]}
+// ]
+
+[
+  {
+    "name": "UnitedStates",
+    "countryCode": "USA",
+    "supportedLocates": [
+      {
+        "local": "en-US",
+        "default": "y",
+        "name": "English"
+      },
+      {
+        "local": "chr-US",
+        "default": "n",
+        "name": "Cherokee"
+      },
+      {
+        "local": "haw-US",
+        "default": "n",
+        "name": "Hawaiian"
+      }
+      ,
+      {
+        "local": "lkt-US",
+        "default": "n",
+        "name": "Lakota"
+      }
+      ,
+      {
+        "local": "es-US",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "VirginIslands",
+    "countryCode": "VGB",
+    "supportedLocates": [
+      {
+        "local": "en-VG",
+        "default": "y",
+        "name": "English"
+      },
+      {
+        "local": "es-VG",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "Chile",
+    "countryCode": "CHL",
+    "supportedLocates": [
+      {
+        "local": "en-CL",
+        "default": "y",
+        "name": "English"
+      },
+      {
+        "local": "arn-CL",
+        "default": "n",
+        "name": "Mapuche"
+      },
+      {
+        "local": "es-CL",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "Albania",
+    "countryCode": "ALB",
+    "supportedLocates": [
+      {
+        "local": "sq-AL",
+        "default": "n",
+        "name": "Albanian"
+      },
+        {
+        "local": "en-AL",
+        "default": "y",
+        "name": "English"
+      }
+
+      	
+    ]
+  },
+  {
+    "name": "Aruba",
+    "countryCode": "ABW",
+    "supportedLocates": [
+      {
+        "local": "nl-AW",
+        "default": "n",
+        "name": "Dutch"
+      }
+,
+{
+    "local": "es-AW",
+    "default": "n",
+    "name": "Spanish"
+  }
+      	
+    ]
+  },
+  {
+    "name": "Barbados",
+    "countryCode": "BRB",
+    "supportedLocates": [
+      {
+        "local": "en-BB",
+        "default": "y",
+        "name": "English"
+      },
+      {
+        "local": "es-BB",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "Bangladesh",
+    "countryCode": "BGD",
+    "supportedLocates": [
+    {
+        "local": "bn-BD",
+        "default": "n",
+        "name": "Bangla"
+      },
+      {
+        "local": "ccp-BD",
+        "default": "n",
+        "name": "Chakma"
+      },
+      {
+        "local": "en-BD",
+        "default": "y",
+        "name": "English"
+      }
+    ]
+  },
+  {
+    "name": "Belize",
+    "countryCode": "BLZ",
+    "supportedLocates": [
+      {
+        "local": "en-BZ",
+        "default": "y",
+        "name": "English"
+      }
+      ,
+      {
+        "local": "es-BZ",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "Brazil",
+    "countryCode": "BRA",
+    "supportedLocates": [
+      {
+        "local": "en-BR",
+        "default": "y",
+        "name": "English"
+      },
+      {
+        "local": "pt-BR",
+        "default": "n",
+        "name": "Portuguese"
+      }
+      ,
+      {
+        "local": "es-BR",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  },
+  {
+    "name": "Cuba",
+    "countryCode": "CUB",
+    "supportedLocates": [
+      {
+        "local": "es-CU",
+        "default": "n",
+        "name": "Spanish"
+      }
+    ]
+  }
+]
