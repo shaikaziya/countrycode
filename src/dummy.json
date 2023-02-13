@@ -20,15 +20,16 @@
                 "name": "Spanish"
             },
             {
-                "local": "en-US",
-                "default": "N",
-                "name": "English"
-            },
-            {
                 "local": "es-AR",
                 "default": "Y",
                 "name": "Spanish-Argentina"
             },
+            {
+                "local": "en-US",
+                "default": "N",
+                "name": "English"
+            },
+          
             {
                 "local": "pt-AR",
                 "default": "N",
@@ -41,15 +42,16 @@
         "countryCode": "CL",
         "supportedLocates": [
             {
-                "local": "en-US",
-                "default": "N",
-                "name": "English"
-            },
-            {
                 "local": "es-419",
                 "default": "Y",
                 "name": "Spanish"
             },
+            {
+                "local": "en-US",
+                "default": "N",
+                "name": "English"
+            },
+            
             {
                 "local": "pt-AR",
                 "default": "N",
@@ -61,16 +63,18 @@
         "name": "Mexico",
         "countryCode": "MX",
         "supportedLocates": [
-            {
-                "local": "es-419",
-                "default": "N",
-                "name": "Spanish"
-            },
+        
             {
                 "local": "en-US",
                 "default": "Y",
                 "name": "English"
             },
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
+            },
+    
             {
                 "local": "es-AR",
                 "default": "N",
@@ -88,6 +92,11 @@
         "countryCode": "JM",
         "supportedLocates": [
             {
+                "local": "pt-AR",
+                "default": "Y",
+                "name": "Portuguese"
+            },
+            {
                 "local": "en-US",
                 "default": "N",
                 "name": "English"
@@ -96,11 +105,6 @@
                 "local": "es-419",
                 "default": "N",
                 "name": "Spanish"
-            },
-            {
-                "local": "pt-AR",
-                "default": "Y",
-                "name": "Portuguese"
             }
         ]
     },
@@ -114,14 +118,14 @@
                 "name": "Spanish-Argentina"
             },
             {
-                "local": "es-419",
-                "default": "N",
-                "name": "Spanish"
-            },
-            {
                 "local": "pt-AR",
                 "default": "Y",
                 "name": "Portuguese"
+            },
+            {
+                "local": "es-419",
+                "default": "N",
+                "name": "Spanish"
             }
         ]
     }

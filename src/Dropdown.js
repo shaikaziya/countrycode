@@ -44,37 +44,71 @@ export default function Dropdown() {
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label" default="USA">
-          Country
-        </InputLabel>
+    <>
+      <>
+        <Box sx={{ minWidth: 120 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label" default="US">
+              Country
+            </InputLabel>
 
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={country}
-          defaultValue={1}
-          label="Country"
-          onChange={handleChange}
-        >
-          {countryConfig.map((countryConfigdata) => {
-            return (
-              <MenuItem
-                key={countryConfigdata.name}
-                value={countryConfigdata.name}
-              >
-                {countryConfigdata.name}
-              </MenuItem>
-            );
-          })}
-        </Select>
-      </FormControl>
-    </Box>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={country}
+              defaultValue={1}
+              label="Country"
+              onChange={handleChange}
+            >
+              {countryConfig.map((countryConfigdata) => {
+                return (
+                  <MenuItem
+                    key={countryConfigdata.name}
+                    value={countryConfigdata.name}
+                  >
+                    {countryConfigdata.name}
+                  </MenuItem>
+                );
+              })}
+            </Select>
+          </FormControl>
+        </Box>
+      </>
+      <br></br>
+      <>
+        <Box sx={{ minWidth: 120 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label" default="US">
+              Country
+            </InputLabel>
+
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={country}
+              defaultValue={1}
+              label="Country"
+              onChange={handleChange}
+            >
+              {countryConfig.map((countryConfigdata) => {
+                return (
+                  <MenuItem
+                    key={countryConfigdata.name}
+                    value={countryConfigdata.name}
+                  >
+                    {countryConfigdata.name}
+                  </MenuItem>
+                );
+              })}
+            </Select>
+          </FormControl>
+        </Box>
+      </>
+    </>
   );
 }
 
 // en-US-->english
 // es-419-->spanish
-// es-AR-->
+// es-AR-->spanish
 // pt-BR-->porc

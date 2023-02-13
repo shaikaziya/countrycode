@@ -20,14 +20,14 @@ export default function BasicCard() {
             Let's make sure your card is eligible to enroll in Visa Purchase
             Alerts.
           </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             <TextField
               id="outlined-multiline-flexible"
               label="Multiline"
               multiline
               maxRows={4}
             />
-          </Typography>
+          </Typography> */}
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
             <Dropdown></Dropdown>
           </Typography>
@@ -37,7 +37,7 @@ export default function BasicCard() {
             changed after registering
           </Typography>
         </CardContent>
-        <CardActions>
+        {/* <CardActions>
           <Button variant="contained" className="Button" onClick={() => {}}>
             Check eligibility
           </Button>
@@ -46,7 +46,7 @@ export default function BasicCard() {
           <Button variant="text" className="Button">
             Cancel
           </Button>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </div>
   );
