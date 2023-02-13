@@ -11,7 +11,7 @@
 [
   {
     "name": "UnitedStates",
-    "countryCode": "USA",
+    "countryCode": "US",
     "supportedLocates": [
       {
         "local": "en-US",

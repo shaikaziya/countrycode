@@ -12,6 +12,7 @@ export default function Dropdown() {
   const [locallang, setLocallang] = useState("en-US");
 
   useEffect(() => {
+    axios.get("https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig");
     localStorage.setItem("countryCode", country);
     localStorage.setItem("lang", locallang);
   }, []);
@@ -28,22 +29,17 @@ export default function Dropdown() {
         `https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig?countryCode=${localcountrycode}`
       )
       .then((response) => {
-        const result = response.data;
+        const result = response.data[0];
         console.log(result);
-        const getData = result.filter(
-          (ele) => ele.countryCode === localcountrycode
+        const localeExists = result.supportedLocates.some(
+          (ele) => ele.local === localStorage.getItem("lang")
         );
-        console.log(result[0].countryCode);
-        const jsonArr = result[0].supportedLocates;
-        // let arr = [];
-        // jsonArr.map(item => {
-        //   arr.push(item.local);
-        // })
-        // console.log(arr,42)
-        localStorage.setItem("lang", jsonArr);
-        console.log(jsonArr,41,"jsonArr")
-        const locallang = localStorage.getItem("lang", jsonArr);
-       
+        if (!localeExists) {
+          const defaultLang = result.supportedLocates.find(
+            (ele) => ele.default === "Y"
+          );
+          localStorage.setItem("lang", defaultLang.local);
+        }
       });
   };
 
@@ -77,7 +73,6 @@ export default function Dropdown() {
     </Box>
   );
 }
-
 
 // en-US-->english
 // es-419-->spanish

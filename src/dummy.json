@@ -16,17 +16,17 @@
         "supportedLocates": [
             {
                 "local": "es-419",
-                "default": "N",
+                "default": "Y",
                 "name": "Spanish"
             },
             {
                 "local": "en-US",
-                "default": "Y",
+                "default": "N",
                 "name": "English"
             },
             {
                 "local": "es-AR",
-                "default": "N",
+                "default": "Y",
                 "name": "Spanish-Argentina"
             },
             {
@@ -42,12 +42,12 @@
         "supportedLocates": [
             {
                 "local": "en-US",
-                "default": "Y",
+                "default": "N",
                 "name": "English"
             },
             {
                 "local": "es-419",
-                "default": "N",
+                "default": "Y",
                 "name": "Spanish"
             },
             {
@@ -89,7 +89,7 @@
         "supportedLocates": [
             {
                 "local": "en-US",
-                "default": "Y",
+                "default": "N",
                 "name": "English"
             },
             {
@@ -99,7 +99,7 @@
             },
             {
                 "local": "pt-AR",
-                "default": "N",
+                "default": "Y",
                 "name": "Portuguese"
             }
         ]
@@ -110,13 +110,8 @@
         "supportedLocates": [
             {
                 "local": "es-AR",
-                "default": "N",
-                "name": "Spanish-Argentina"
-            },
-            {
-                "local": "en-US",
                 "default": "Y",
-                "name": "English"
+                "name": "Spanish-Argentina"
             },
             {
                 "local": "es-419",
@@ -125,7 +120,7 @@
             },
             {
                 "local": "pt-AR",
-                "default": "N",
+                "default": "Y",
                 "name": "Portuguese"
             }
         ]
