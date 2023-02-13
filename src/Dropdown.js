@@ -10,7 +10,7 @@ import axios from "axios";
 export default function Dropdown() {
   const [country, setCountry] = useState("US");
   const [locallang, setLocallang] = useState("en-US");
-
+  const [languageList, setlanguageList] = useState([]);
   useEffect(() => {
     axios.get("https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig");
     localStorage.setItem("countryCode", country);
@@ -40,8 +40,11 @@ export default function Dropdown() {
           );
           localStorage.setItem("lang", defaultLang.local);
         }
+        setlanguageList([...result.supportedLocates]);
       });
   };
+
+  console.log(languageList);
 
   return (
     <>
@@ -75,6 +78,7 @@ export default function Dropdown() {
         </Box>
       </>
       <br></br>
+
       <>
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth>
@@ -90,7 +94,7 @@ export default function Dropdown() {
               label="Country"
               onChange={handleChange}
             >
-              {countryConfig.map((countryConfigdata) => {
+              {languageList.map((countryConfigdata) => {
                 return (
                   <MenuItem
                     key={countryConfigdata.name}
