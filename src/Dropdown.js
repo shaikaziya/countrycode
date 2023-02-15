@@ -7,15 +7,19 @@ import Select from "@mui/material/Select";
 import { useState, useEffect } from "react";
 import { countryConfig } from "./Constant";
 import axios from "axios";
+
 export default function Dropdown() {
   const [country, setCountry] = useState("US");
   const [locallang, setLocallang] = useState("en-US");
   const [languageList, setlanguageList] = useState([]);
+  const [locallanList, SetLocallanlist] = useState([]);
   useEffect(() => {
     axios.get("https://63e4b7ccc04baebbcdaa694d.mockapi.io/countryConfig");
     localStorage.setItem("countryCode", country);
     localStorage.setItem("lang", locallang);
   }, []);
+  
+
   const handleChange = (event) => {
     setCountry(event.target.value);
     const selectedData = countryConfig.find(
@@ -40,12 +44,27 @@ export default function Dropdown() {
           );
           localStorage.setItem("lang", defaultLang.local);
         }
-        setlanguageList([...result.supportedLocates]);
+        setlanguageList([...result.supportedLocates]); //supportedLocates are coming
+      
       });
   };
 
-  console.log(languageList);
+  console.log(languageList,"languageList");
 
+
+const handleChangeLan=(event)=>{
+  SetLocallanlist(event.target.value)
+  const getlanguageList=languageList.find(
+    (ele) => ele.name === event.target.value
+  );
+  console.log(getlanguageList,60)
+
+  localStorage.setItem("lang",getlanguageList.local);
+  // localStorage.setItem("lang");
+  
+
+
+}
   return (
     <>
       <>
@@ -83,7 +102,7 @@ export default function Dropdown() {
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label" default="US">
-              Country
+              locallang
             </InputLabel>
 
             <Select
@@ -92,15 +111,15 @@ export default function Dropdown() {
               value={country}
               defaultValue={1}
               label="Country"
-              onChange={handleChange}
+              onChange={handleChangeLan}
             >
-              {languageList.map((countryConfigdata) => {
+              {languageList.map((languageListdata) => {
                 return (
                   <MenuItem
-                    key={countryConfigdata.name}
-                    value={countryConfigdata.name}
+                    key={languageListdata.name}
+                    value={languageListdata.name}
                   >
-                    {countryConfigdata.name}
+                    {languageListdata.name}
                   </MenuItem>
                 );
               })}
